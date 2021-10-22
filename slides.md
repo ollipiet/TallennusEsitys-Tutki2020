@@ -50,17 +50,18 @@ layout: default
 
 ---
 # Kuvanluku koneellisesti eli OCR
-- Lue kuva tekstinä kuvatiedostosta (pdf) tai valokuvasta (jpg)
-- Perinteisesti ollut haastavaa - haasteena kuvien laatu ja tietokoneiden hahmotuskyky
+- Lue kuva tekstinä kuvatiedostosta (pdf) tai valokuvasta (jpg).
+- Perinteisesti ollut haastavaa - haasteena kuvien laatu ja tietokoneiden hahmotuskyky.
 - Helpottunut kun kuvatietoja mylläävistä koneista on tullut tehokkaampia ja kamerat mm. iPhoneissa ovat kehittyneet.
 ---
-layout: default
+layout: image-right
+image: 'img/SampoPinoScreenshot.jpg'
 ---
 # Case Sampo
 - Helsingin Sanomilla on hallussaan iso
 nippu paperisia asiakirjoja, joissa on
 Sammon osakeyhtiöomistajat vuodelta
-1987
+1987.
 - Mutta miten paperille painettu tieto
 muuttuu hyödylliseksi hakukoneeksi?
 
