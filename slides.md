@@ -99,12 +99,12 @@ layout: default
 
 HS:n hakukone auttoi löytämään Sammon paperiosaketta omistaneet yhtiöt
 
-<div class="abs-br m-6 flex gap-2">
+<div class="abs-tr m-6 flex gap-2">
   <button class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
   <a class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
+    <p>👨‍💻</p>
   </a>
 </div>
 
