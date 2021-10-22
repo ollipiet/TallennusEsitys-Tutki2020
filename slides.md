@@ -81,7 +81,7 @@ class: content
 
 ---
 layout: image-right
-image: 'SampoPinoScreenshot.jpg'
+image: '/SampoPinoScreenshot.jpg'
 class: 'content-center'
 ---
 # Case Sampo
@@ -97,7 +97,16 @@ layout: default
 ---
 ## HS:n hakukoneeksi
 
-- HS:n hakukone auttoi löytämään Sammon paperiosaketta omistaneet yhtiöt
+HS:n hakukone auttoi löytämään Sammon paperiosaketta omistaneet yhtiöt
+
+<div class="abs-br m-6 flex gap-2">
+  <button class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon:edit />
+  </button>
+  <a class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon-logo-github />
+  </a>
+</div>
 
 <style>
 h2 {
@@ -110,5 +119,3 @@ h2 {
     background-position: 0 88%;
 }
 </style>
-
----
