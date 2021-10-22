@@ -45,25 +45,54 @@ class: text-center
 
 [Dokumenttikäsittelijä Cometdocs](cometdocs.com) · iPhone SE
 
----
-layout: default
+<!--
+1. IMPORTANT: Log in to Your Session 20 Minutes Before It Starts for Tech Check.
+2. Be as Concrete and Practical as Possible
+This is a training conference, and we need you to be as practical as possible. Your colleagues should leave your session having learned how to better investigate a story or use a new tool or technique. Your talk should focus on useful methods and strategies, with practical examples.
+Do not use a lot of time talking about your story or yourself.
+The biggest complaint we get on attendee surveys is that speakers talked about themselves instead of how they did their work.
+Most sessions are 75 minutes long, and most speakers will have 10 to 15 minutes to speak. Your moderator will be in touch to discuss your presentation.
+3. Talk About the Methods Used in Your Work:
+If talking about a story, explain what kinds of sources you used. How did you find them?
+What kind of data or documents did you use? How did you get them?
+What was the breakthrough in investigating your story?
+Did you work in a team or by yourself? If a team, how did you collaborate?
+How did you solve your toughest challenges? How did you deal with security?
+How did you produce, present and roll out the story for maximum impact?
+What would you recommend to other journalists doing a similar project?
+4. Speak Clearly, Use Slides and Media
+Many in the audience speak English as a second language, so please speak clearly. Please also note that some sessions are being translated, and it is very important that our interpreters can hear you as clearly as possible. It’s also helpful to illustrate your key points with media such as photos and videos in a PDF, Powerpoint or similar presentation. Do not read your presentation. We prepared some PowerPoint templates which you can download and adapt for your own presentation.
+5. Be Aware: Sessions Will Be Recorded and “On the Record”
+This is a conference of journalists and what you say may be quoted and tweeted. All sessions except networking ones will be recorded and accessible for attendees on the Pathable platform exclusively for 6 months. After that time, the recordings will be uploaded to GIJN’s YouTube channel and available to the public.
+6. Tipsheets & Presentations
+It’s very helpful for the audience if you prepare a tipsheet. The most popular tipsheets are those that provide specific details: documents and data to get, websites to use, relevant stories and sources. You can download and use our tipsheet template to create your own.
+-->
 
 ---
+layout: default
+class: content
+---
+
 # Kuvanluku koneellisesti eli OCR
-- Lue kuva tekstinä kuvatiedostosta (pdf) tai valokuvasta (jpg).
-- Perinteisesti ollut haastavaa - haasteena kuvien laatu ja tietokoneiden hahmotuskyky.
+
+- Lue kuva tekstinä kuvatiedostosta (pdf) tai valokuvasta (jpg)
+- Perinteisesti ollut haastavaa - haasteena kuvien laatu ja tietokoneiden hahmotuskyky
 - Helpottunut kun kuvatietoja mylläävistä koneista on tullut tehokkaampia ja kamerat mm. iPhoneissa ovat kehittyneet.
+
 ---
 layout: image-right
-image: 'img/SampoPinoScreenshot.jpg'
+image: '/img/SampoPinoScreenshot.jpg'
+class: 'content-center'
 ---
 # Case Sampo
 - Helsingin Sanomilla on hallussaan iso
 nippu paperisia asiakirjoja, joissa on
 Sammon osakeyhtiöomistajat vuodelta
-1987.
+1987
 - Mutta miten paperille painettu tieto
 muuttuu hyödylliseksi hakukoneeksi?
+
+
 
 <!-- Tähän slideen kuva paperipinosta -->
 ---
