@@ -122,4 +122,7 @@ h2 {
 
 ---
 layout: image
-image: 
+image: './SturenkatuVirallinenLehti.jpg'
+---
+
+---
