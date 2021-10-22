@@ -92,7 +92,23 @@ Sammon osakeyhtiöomistajat vuodelta
 - Mutta miten paperille painettu tieto
 muuttuu hyödylliseksi hakukoneeksi?
 
+---
+layout: default
+---
+## HS:n hakukoneeksi
 
+- HS:n hakukone auttoi löytämään Sammon paperiosaketta omistaneet yhtiöt
 
-<!-- Tähän slideen kuva paperipinosta -->
+<style>
+h2 {
+  background-image: linear-gradient(150deg
+    , #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+}
+</style>
+
 ---
