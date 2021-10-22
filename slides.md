@@ -119,3 +119,7 @@ h2 {
     background-position: 0 88%;
 }
 </style>
+
+---
+layout: image
+image: 
