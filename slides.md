@@ -81,7 +81,7 @@ class: content
 
 ---
 layout: image-right
-image: '/SampoPinoScreenshot.jpg'
+image: './SampoPinoScreenshot.jpg'
 class: 'content-center'
 ---
 # Case Sampo
