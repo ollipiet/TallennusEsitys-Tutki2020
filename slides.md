@@ -80,35 +80,111 @@ class: content
 - Helpottunut kun kuvatietoja mylläävistä koneista on tullut tehokkaampia ja kamerat mm. iPhoneissa ovat kehittyneet.
 
 ---
+layout: default
+---
 
-#Esimerkki 1: henkilöt
+# Esimerkki 1: Ruudunraavinta esimerkit
 
 <div class="container mx-auto">
   <div class="cols">
-    <p>Henkilö Etunimi, Sukunimi, ammatti
-      Essi Enteilijä, valmentaja
-      Annika Ahvenainen, jalkapalloilija
-      Malka Antoinette, jalkapalloilija
-      Minni Mihlapolku, jalkapalloilija
-    </p>
-    <p>
-      Pelastustoimi Henkilöstö Etunimi, Sukunimi, ammatti
-      Piia Palovartija, esimies
-      Jaro Poltinpaja, pelastaja
-      Raija Repo, pelastaja
-      Miia Jokinen, pelastaja
-    </p> 
+  <h3>Jalkapalloliiga</h3>
+  <div class="grid">
+    <a class="item" href="" style="--hue: 200deg"><span class="icon base" id="blur0" aria-hidden="true">📄</span><span class="icon base" aria-hidden="true">📄</span><span class="icon midl" aria-hidden="true" style="background-image: -moz-element(#blur0)">📄</span><span class="icon grey" aria-hidden="true">📄</span>henkilö</a>
+  </div>
+  <p class="otsake">Etunimi, Sukunimi, ammatti 
+  </p><p> Essi Enteilijä, valmentaja <br>
+    Annika Ahvenainen, jalkapalloilija <br>
+    Malka Antoinette, jalkapalloilija <br>
+  </p>
+  <h3>Kuljettajaluettelo</h3>
+  <div class="grid">
+    <a class="item" href="" style="--hue: 0deg"><span class="icon base" id="blur0" aria-hidden="true">🚒</span><span class="icon base" aria-hidden="true">🚒</span><span class="icon midl" aria-hidden="true" style="background-image: -moz-element(#blur0)">🚒</span><span class="icon grey" aria-hidden="true">🚒</span>henkilö</a>
+  </div>
+  <p class="otsake">Etunimi, Sukunimi, ammatti</p>
+  <p>Piia Palovartija, esimies <br>
+    Jaro Poltinpaja, pelastaja <br>
+    Raija Repo, pelastaja <br>
+  </p> 
+  <h3>TAI Vakuutetut omistajat</h3>
+  <div class="grid">
+    <a class="item" href="" style="--hue: 87deg"><span class="icon base" id="blur0" aria-hidden="true">🏘</span><span  class="icon base" aria-hidden="true">🏘</span><span class="icon midl" aria-hidden="true" style="background-image: -moz-element(#blur0)">🏘</span><span class="icon grey" aria-hidden="true">🏘</span>asunto</a>
+  </div>
+  <p class="otsake">nimi, y-tunnus</p>
+  <p>Asunto-osakeyhtiö Stuurenkatu, y-tunnus...<br>
+  Asunto-osakeyhtiö ...</p>
   </div>
 </div> 
 
 <style>
   .cols {
-    max-width: 500px;
+    max-width: 1100px;
     margin: 20px auto;
-    column-count: 2;
+    column-count: 3;
     overflow:  auto;
-    height:  400px;
+    height:  100%;
   }
+  .otsake {
+    text-decoration: underline rebeccapurple double;
+  }
+  .grid a {
+    padding: 0.75em 0 0.375em;
+    display: grid;
+    text-decoration: none;
+  }
+  
+  .item {
+    --hl: 0;
+    width: 5em;
+    color: hsl(var(--hue), calc(var(--hl)*100%), 65%);
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .item:focus {
+    outline: none;
+  }
+  .item:hover, .item:focus {
+    --hl: 1 ;
+  }
+
+  .icon {
+    grid-area: 1/1;
+    place-self: center;
+    font-size: 2.5em;
+  }
+
+  .base {
+    z-index: 1;
+    transform: translate(calc(var(--hl)*.375em), calc(var(--hl)*-.25em)) rotate(calc(var(--hl)*22.5deg));
+    opacity: var(--hl);
+    filter: sepia(1) hue-rotate(calc(var(--hue) - 50deg)) saturate(3) blur(var(--r, 0));
+    transition: 0.3s;
+  }
+  .base[id*=blur] {
+    --r: 5px;
+    position: fixed;
+    bottom: 100vh;
+  }
+
+  .midl {
+    z-index: 2;
+    color: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-mask: linear-gradient(red 0 0) text;
+  }
+  @supports (background: -moz-element(#hl)) {
+    .midl {
+      background-color: #fff;
+      background-clip: text;
+      backdrop-filter: none;
+    }
+  }
+
+  .grey {
+    z-index: 3;
+    filter: grayscale(1) opacity(0.35);
+  }
+    
 </style>
 
 
