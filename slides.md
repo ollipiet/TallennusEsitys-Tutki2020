@@ -250,5 +250,119 @@ h2 {
 layout: image
 image: './SturenkatuVirallinenLehti.jpg'
 ---
+<!--4 326 asunto-osakeyhtiötä hakukoneessa. https://www.hs.fi/talous/art-2000005018542.html-->
+
 
 ---
+
+# iPhone kuvien kopioimisen perusperiaate - Live Text
+- Kuvan ottamisen jälkeen kuvagalleriaan tulee kuvaan merkki oikeaan alakulmaan, jolloin kuvan sisältämän tekstin saa näkyviin
+- **iPhonen ruudulta voi valita tekstiä ja kopioida sen** 
+  - Viestin voi lähettää itselleen tai eteenpäin esimerkiksi sähköpostilla, Whatsapilla jne...
+  
+- Ominaisuus vaatii iOS15-päivityksen ja vuoden 2018 tai tuoreemman puhelimen (iPhone Xs, 11, SE 2020 ja  uudemmat)
+- [Tarkemmin Live Text-ominaisuudesta iGeeksBlog](https://www.igeeksblog.com/how-to-use-live-text-on-iphone-ipad/)
+
+---
+
+# Toimistotyökalut: kuinka printteri-skannerilla saa digitoitua asiakirjat
+
+- Printterin OCR-ominaisuudet.
+
+---
+
+# Cometdocs
+
+- Asiakirjojen kääntäjä, ja kuvantunnistaja erityisesti pdf-tiedostoista
+- Perusversio ilmainen, **vaatii rekisteröitymisen**.
+- Tukee hyvin suomenkielisiä tekstejä, ja tunnistaa suurella tarkkuudella myös skannattuja papereita
+- **Cometdocs.com**
+- Nimet, koodit, listat ylennyksistä 
+
+- [Fukushima](https://olli.xyz/BkFGSh)
+
+---
+layout:standard
+---
+<iframe style="width: 100%; height: 100%;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRE3H9EBRa00ySnkSp2xY4i5NkyQUsK55Ze3wzWATGSo3iri3Q0ZAHka2NdvtVi2aGeVunxxGNvdGh/pubhtml?gid=91846639&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+---
+
+# Kysymyksiä - muiden kokeilemia sovelluksia?
+
+<div class="gridholder">
+    <div class="grid">
+      <a class="item" href="" style="--hue: 64deg"><span class="icon base" id="blur0" aria-hidden="true">🏘</span><span  class="icon base" aria-hidden="true">🏘</span><span class="icon midl" aria-hidden="true" style="background-image: -moz-element(#blur0)">🏘</span><span class="icon grey" aria-hidden="true">🏘</span>Tuomo</a>
+  </div>
+  <div class="grid">
+      <a class="item" href="" style="--hue: 180deg"><span class="icon base" id="blur0" aria-hidden="true">👨‍💻</span><span  class="icon base" aria-hidden="true">👨‍💻</span><span class="icon midl" aria-hidden="true" style="background-image: -moz-element(#blur0)">👨‍💻</span><span class="icon grey" aria-hidden="true">👨‍💻</span>Olli</a>
+  </div>
+</div>
+
+<style>
+  .gridholder {
+    display:  grid;
+    grid-auto-flow: row;
+    place-self: center;
+  }
+  .grid a {
+    padding: 1.9em 0 0.375em;
+    display: grid;
+    text-decoration: none;
+  }
+  
+  .item {
+    --hl: 0;
+    width: 5em;
+    color: hsl(var(--hue), calc(var(--hl)*100%), 65%);
+    text-align: center;
+    text-decoration: none;
+    transition: color 7s;
+    gap: 10px;
+  }
+  .item:focus {
+    outline: none;
+  }
+  .item:hover, .item:focus {
+    --hl: 1 ;
+  }
+
+  .icon {
+    grid-area: 1/1;
+    place-self: center;
+    font-size: 2.5em;
+  }
+
+  .base {
+    z-index: 1;
+    transform: translate(calc(var(--hl)*.375em), calc(var(--hl)*-.25em)) rotate(calc(var(--hl)*22.5deg));
+    opacity: var(--hl);
+    filter: sepia(1) hue-rotate(calc(var(--hue) - 50deg)) saturate(3) blur(var(--r, 0));
+    transition: 7s;
+  }
+  .base[id*=blur] {
+    --r: 14px;
+    position: fixed;
+    bottom: 100vh;
+  }
+
+  .midl {
+    z-index: 2;
+    color: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-mask: linear-gradient(red 0 0) text;
+  }
+  @supports (background: -moz-element(#hl)) {
+    .midl {
+      background-color: #fff;
+      background-clip: text;
+      backdrop-filter: none;
+    }
+  }
+
+  .grey {
+    z-index: 3;
+    filter: grayscale(1) opacity(0.35);
+  }
+    
+</style>
