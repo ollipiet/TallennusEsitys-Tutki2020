@@ -80,6 +80,39 @@ class: content
 - Helpottunut kun kuvatietoja mylläävistä koneista on tullut tehokkaampia ja kamerat mm. iPhoneissa ovat kehittyneet.
 
 ---
+
+#Esimerkki 1: henkilöt
+
+<div class="container mx-auto">
+  <div class="cols">
+    <p>Henkilö Etunimi, Sukunimi, ammatti
+      Essi Enteilijä, valmentaja
+      Annika Ahvenainen, jalkapalloilija
+      Malka Antoinette, jalkapalloilija
+      Minni Mihlapolku, jalkapalloilija
+    </p>
+    <p>
+      Pelastustoimi Henkilöstö Etunimi, Sukunimi, ammatti
+      Piia Palovartija, esimies
+      Jaro Poltinpaja, pelastaja
+      Raija Repo, pelastaja
+      Miia Jokinen, pelastaja
+    </p> 
+  </div>
+</div> 
+
+<style>
+  .cols {
+    max-width: 500px;
+    margin: 20px auto;
+    column-count: 2;
+    overflow:  auto;
+    height:  400px;
+  }
+</style>
+
+
+---
 layout: image-right
 image: './SampoPinoScreenshot.jpg'
 class: 'content-center'
@@ -91,6 +124,7 @@ Sammon osakeyhtiöomistajat vuodelta
 1987
 - Mutta miten paperille painettu tieto
 muuttuu hyödylliseksi hakukoneeksi?
+
 
 ---
 layout: default
