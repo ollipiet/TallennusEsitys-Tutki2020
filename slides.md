@@ -97,6 +97,7 @@ layout: default
     Malka Antoinette, jalkapalloilija <br>
     Mikale Mahtipallo, maalivahti <br>
     Kalle Kultamitalisti, huoltaja <br>
+    Pia Opoto, huoltaja
   </p>
   <h3>Kuljettajaluettelo</h3>
   <div class="grid">
@@ -108,6 +109,7 @@ layout: default
     Raija Repo, pelastaja <br>
     Piia Palkola, pelastaja <br>
     Teijo Tekijä, nuorempi pääl. <br>
+    Olga Positova, pelastaja <br>
   </p> 
   <h3>TAI Vakuutetut omistajat</h3>
   <div class="grid">
@@ -123,8 +125,8 @@ layout: default
 <v-click>
 <div class="abs-br m-6 flex">
   <div>
-      <p> Asunto-osakeyhtiö Turku kultakerho, 1-2345678 <br>
-  Asunto-osakeyhtiö Kulta Vuolija, 23456-345<br>...</p>
+      <p contenteditable="true"> Asunto-osakeyhtiö Turku kultakerho, 1-2345678 <br>
+  Asunto-osakeyhtiö Kulta Vuolija, 23456-345<br></p>
   </div>
 </div>
 </v-click>
