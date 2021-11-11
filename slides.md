@@ -1,32 +1,25 @@
 ---
-# try also 'default' to start simple
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
+class: text-center
 highlighter: shiki
-# show line numbers in code blocks
 lineNumbers: false
-# some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
 
   Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
 drawings:
   persist: false
+title: Ruudunluku ja kuvatunnistus tekstille
 ---
 
 # Ruudunluku ja kuvatunnistus tekstille
 
-Case Sampo kadonneet osakkeet ja pappien rötökset
+Sampo kadonneet osakkeet ja hakeminen PDF-listojen avulla
 
 <div class="abs-br m-6 flex gap-2">
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <a href="https://github.com/ollipiet/TallennusEsitys-Tutki2020" target="_blank" alt="GitHub"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -221,17 +214,28 @@ muuttuu hyödylliseksi hakukoneeksi?
 ---
 layout: default
 ---
+
 ## HS:n hakukoneeksi
 
 HS:n hakukone auttoi löytämään Sammon paperiosaketta omistaneet yhtiöt
 
+
+
+Simon Rogersin 3 kysymystä datalle:
+1. What to compare or show change?
+2. **What does the data mean?**
+3. What other data sets to use with it?
+
+**Mitä lukija voi hakea datasta - eli uutisen personointi hakukoneella**
+
+<input class="secret-code" type="text" accesskey="c" tabindex="-1" value="" placeholder="Secret Code" pattern="wpw"> 
 <div class="abs-tr m-6 flex gap-2">
   <button class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
+    <span style="--wow: var(--secret_code) black; color: var(--wow, slategray);"><carbon:edit /></span>
   </button>
-  <a class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
+  <span style="--wow: var(--secret_code) block; background-color: var(--wow, rebeccapurple);"><a class="text-xl icon-btn opacity-100 !border-none !hover:text-white">
     <p>👨‍💻</p>
-  </a>
+  </a></span>
 </div>
 
 <style>
@@ -244,7 +248,10 @@ h2 {
     background-size: 100% 0.2em;
     background-position: 0 88%;
 }
+.secret-code:not(:placeholder-shown):valid ~ * { --secret_code: ; }
+.secret-code { position: absolute; opacity: 0; pointer-events: none; }
 </style>
+
 
 ---
 layout: image
@@ -269,6 +276,9 @@ image: './SturenkatuVirallinenLehti.jpg'
 
 - Printterin OCR-ominaisuudet.
 
+- Kerron matrikkeleista, joita olen käyttänyt hyödyksi eri tavoin.
+
+
 ---
 
 # Cometdocs
@@ -292,20 +302,29 @@ layout:standard
 
 <div class="gridholder">
     <div class="grid">
-      <a class="item" href="" style="--hue: 64deg"><span class="icon base" id="blur0" aria-hidden="true">🏘</span><span  class="icon base" aria-hidden="true">🏘</span><span class="icon midl" aria-hidden="true" style="background-image: -moz-element(#blur0)">🏘</span><span class="icon grey" aria-hidden="true">🏘</span>Tuomo</a>
+      <div class="item" style="--hue: 64deg"><span class="icon base" id="blur0" aria-hidden="true">🏘</span><span  class="icon base" aria-hidden="true">🏘</span><span class="icon midl" aria-hidden="true" style="background-image: -moz-element(#blur0)">🏘</span><span class="icon grey" aria-hidden="true">🏘</span>Tuomo</div>
   </div>
   <div class="grid">
-      <a class="item" href="" style="--hue: 180deg"><span class="icon base" id="blur0" aria-hidden="true">👨‍💻</span><span  class="icon base" aria-hidden="true">👨‍💻</span><span class="icon midl" aria-hidden="true" style="background-image: -moz-element(#blur0)">👨‍💻</span><span class="icon grey" aria-hidden="true">👨‍💻</span>Olli</a>
+      <div class="item"  style="--hue: 180deg"><span class="icon base" id="blur0" aria-hidden="true">👨‍💻</span><span  class="icon base" aria-hidden="true">👨‍💻</span><span class="icon midl" aria-hidden="true" style="background-image: -moz-element(#blur0)">👨‍💻</span><span class="icon grey" aria-hidden="true">👨‍💻</span>Olli</div>
   </div>
+</div>
+<div class="abs-br m-6 flex gap-2">
+  <a href="https://github.com/ollipiet/TallennusEsitys-Tutki2020" target="_blank" alt="GitHub"
+    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon-logo-github />
+  </a>
 </div>
 
 <style>
+
+  
+
   .gridholder {
     display:  grid;
     grid-auto-flow: row;
     place-self: center;
   }
-  .grid a {
+  .grid div {
     padding: 1.9em 0 0.375em;
     display: grid;
     text-decoration: none;
@@ -338,7 +357,7 @@ layout:standard
     transform: translate(calc(var(--hl)*.375em), calc(var(--hl)*-.25em)) rotate(calc(var(--hl)*22.5deg));
     opacity: var(--hl);
     filter: sepia(1) hue-rotate(calc(var(--hue) - 50deg)) saturate(3) blur(var(--r, 0));
-    transition: 7s;
+    transition: 5s;
   }
   .base[id*=blur] {
     --r: 14px;
